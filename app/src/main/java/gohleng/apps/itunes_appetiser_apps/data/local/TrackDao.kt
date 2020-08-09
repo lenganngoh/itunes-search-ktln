@@ -13,7 +13,7 @@ interface TrackDao {
     fun getAll() : LiveData<List<Track>>
 
     @Query("SELECT * FROM tracks WHERE trackId = :id")
-    fun getItem(id: Long): LiveData<Track>
+    fun getTrack(id: Long): LiveData<Track>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insert(item: Track)
