@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_header_height">60dp</dimen>
+    <dimen name="dimen_margin_master">6dp</dimen>
+    <dimen name="dimen_margin_detail">12dp</dimen>
+    <dimen name="dimen_card_height">150dp</dimen>
+    <dimen name="dimen_card_image_size">100dp</dimen>
+    <dimen name="dimen_card_image_expanded_size">150dp</dimen>
+    <dimen name="dimen_card_detail_margin">110dp</dimen>
+    <dimen name="dimen_card_radius">30dp</dimen>
+    <dimen name="dimen_fading_edge">20dp</dimen>
+    <dimen name="dimen_default_square_icon_edge_size">30dp</dimen>
+
+    <dimen name="dimen_title_text_size">25sp</dimen>
+    <dimen name="dimen_title_min_text_size">16sp</dimen>
+    <dimen name="dimen_sub_title_text_size">14sp</dimen>
+    <dimen name="dimen_sub_title_min_text_size">12sp</dimen>
+</resources>

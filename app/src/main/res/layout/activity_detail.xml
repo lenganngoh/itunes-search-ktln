@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgTrack"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_card_image_expanded_size"
+        android:layout_gravity="center_vertical"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_card_image_expanded_size"
+        android:background="@color/colorWhiteAlpha70"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iconClose"
+        android:layout_width="@dimen/dimen_default_square_icon_edge_size"
+        android:layout_height="@dimen/dimen_default_square_icon_edge_size"
+        android:layout_margin="@dimen/dimen_margin_detail"
+        android:src="@drawable/icon_close"
+        android:tint="@android:color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_card_image_expanded_size"
+        android:layout_marginStart="@dimen/dimen_margin_detail"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".65">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="@dimen/dimen_title_text_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textSize="@dimen/dimen_sub_title_text_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="@dimen/dimen_sub_title_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgTrack">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_margin_detail"
+            android:layout_marginTop="@dimen/dimen_margin_detail"
+            android:layout_marginEnd="@dimen/dimen_margin_detail"
+            android:fontFamily="sans-serif-light"
+            android:textSize="@dimen/dimen_sub_title_text_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_margin_detail"
+            android:layout_marginEnd="@dimen/dimen_margin_detail"
+            android:layout_marginBottom="@dimen/dimen_margin_detail"
+            android:fontFamily="sans-serif-light"
+            android:textSize="@dimen/dimen_sub_title_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorGrayAlpha80" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtLongDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_margin_detail"
+            android:fontFamily="sans-serif-light"
+            android:textSize="@dimen/dimen_sub_title_text_size" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

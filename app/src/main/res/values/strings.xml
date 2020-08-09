@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">itunes-appetiser-apps</string>
+    <string name="str_search_a_movie">Search a movie</string>
+    <string name="str_itunes_movie_search">iTunes Movie Search</string>
+    <string name="str_start_searching_msg">Start searching by\nclicking on the search bar</string>
+
+    <string name="str_genre">Genre</string>
+    <string name="str_artist">Artist</string>
+</resources>
