@@ -29,5 +29,5 @@ class TrackRepository @Inject constructor(
 
     fun getAll(): LiveData<List<Track>> = local.getAll()
 
-    fun getTrack(id: Long): LiveData<Track> = local.getItem(id)
+    fun getTrack(id: Long): LiveData<Track> = local.getTrack(id)
 }
